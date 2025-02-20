@@ -1,25 +1,28 @@
-import React from "react";
-import "./styles.css"; // ✅ Import styles
+import React, { useState } from "react";
+import "./styles.css";
 import OrderList from "./components/OrderList";
 import AddOrder from "./components/AddOrder";
 import ItemList from "./components/ItemList";
 import AddItem from "./components/AddItem";
 
 const App = () => {
+    const [refreshTrigger, setRefreshTrigger] = useState(0);
+
     return (
         <div className="app-container">
-            {/* ✅ Add a header container for better logo placement */}
             <header className="app-header">
                 <img src="/onestopd_logo.jpeg" alt="App Logo" className="app-logo" />
-                <h1 className="app-title">ONESTOPD Order & Item Management</h1>
+                <h1 className="app-title">Order & Item Management</h1>
             </header>
 
             <div className="grid-container">
                 <div className="section">
-                    <AddOrder />
+                    {/* ✅ Pass setRefreshTrigger to AddOrder */}
+                    <AddOrder setRefreshTrigger={setRefreshTrigger} />
                 </div>
                 <div className="section">
-                    <OrderList />
+                    {/* ✅ Pass refreshTrigger to OrderList */}
+                    <OrderList refreshTrigger={refreshTrigger} />
                 </div>
                 <div className="section">
                     <AddItem />
