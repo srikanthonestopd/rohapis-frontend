@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Section */
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* ✅ Aligns content to the left */
+    padding: 10px 20px;
+    background-color: white; /* Optional: Add a background for better visibility */
+}
+
+/* Logo Styles */
+.app-logo {
+    width: 50px; /* ✅ Makes logo small */
+    height: auto;
+    margin-right: 15px; /* ✅ Adds spacing between logo and title */
+}
+
+/* Title Styles */
+.app-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+/* App Container */
+.app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Styles */
+.section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;  /* ✅ Adds space above input fields */
+}
+
+/* Buttons */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px; /* ✅ Adds space above the button */
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Order List */
+.order-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-list li {
+    background: #e9ecef;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
