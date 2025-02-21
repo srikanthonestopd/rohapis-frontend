@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:8080/api"; // Backend URL
+const API_BASE_URL = "https://onestopd-golang-rohapis-3.onrender.com/api"; // Backend URL
 
 export const getOrders = async () => {
     return await axios.get(`${API_BASE_URL}/orders`);
