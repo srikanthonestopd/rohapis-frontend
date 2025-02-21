@@ -10,7 +10,7 @@ const AddItem = () => {
     // Fetch next item ID
     const fetchNextItemID = async () => {
         try {
-            const response = await axios.get("http://localhost:8080/api/next-id");
+            const response = await axios.get("https://onestopd-golang-rohapis-3.onrender.com/api/next-id");
             setId(response.data.next_id);
         } catch (error) {
             console.error("Error fetching next ID:", error);

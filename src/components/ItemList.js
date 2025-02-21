@@ -16,7 +16,7 @@ const ItemList = () => {
         }
 
         try {
-            const response = await axios.get(`http://localhost:8080/api/get/${itemId}`);
+            const response = await axios.get(`https://onestopd-golang-rohapis-3.onrender.com/api/get/${itemId}`);
             setItem(response.data);
         } catch (err) {
             setError("Item not found or API error");
