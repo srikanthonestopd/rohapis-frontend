@@ -12,7 +12,7 @@ const App = () => {
         <div className="app-container">
             <header className="app-header">
                 <img src="/onestopd_logo.jpeg" alt="App Logo" className="app-logo" />
-                <h1 className="app-title">Order & Item Management</h1>
+                <h1 className="app-title">ONESTOPD Order & Item Management</h1>
             </header>
 
             <div className="grid-container">
